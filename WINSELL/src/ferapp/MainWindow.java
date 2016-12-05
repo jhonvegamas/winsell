@@ -10,7 +10,12 @@ import java.io.File;
 import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -35,6 +40,19 @@ public class MainWindow extends javax.swing.JFrame {
         this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        this.setIconImage(new ImageIcon(getClass().getResource("/IMAGENES/logo.jpg")).getImage());
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -247,7 +265,7 @@ public class MainWindow extends javax.swing.JFrame {
         try {
             Map p = new HashMap();
             JasperPrint print;
-            JasperReport report = JasperCompileManager.compileReport(new File("C:/prueba/reporte_venta_diario.jrxml").getAbsolutePath());          
+            JasperReport report = JasperCompileManager.compileReport(new File("C:/prueba/reporte_venta_diario.jrxml").getAbsolutePath());
             print = JasperFillManager.fillReport(report, null, con);
             JasperViewer view = new JasperViewer(print, false);
             view.setTitle("Reporte de Ventas por Dias");
