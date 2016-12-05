@@ -15,6 +15,7 @@ import javax.swing.JLayeredPane;
 public class AdministradorVentanas {
 
     private static JFacturas ftc;
+    private static JFacturas1 ftc1;
     private static RegistroCliente rc;    
     private static RegistroVendedor rv;
     private static RegistroArticulo ra;
@@ -34,6 +35,22 @@ public class AdministradorVentanas {
             dp.add(ftc, JLayeredPane.DEFAULT_LAYER);
         }
         activarVentana(dp, ftc);
+    }
+    public static void mostrarVentanaFactura2(JDesktopPane dp) {
+        if (ftc1 != null && !ftc1.isShowing()) {
+            ftc1.show();
+            dp.remove(ftc1);
+            try {
+                dp.add(ftc1, JLayeredPane.DEFAULT_LAYER);
+            } catch (IllegalArgumentException ex) {
+                dp.add(ftc1, JLayeredPane.DEFAULT_LAYER);
+            }
+        }
+        if (ftc1 == null) {
+            ftc1 = new JFacturas1();
+            dp.add(ftc1, JLayeredPane.DEFAULT_LAYER);
+        }
+        activarVentana(dp, ftc1);
     }
 
     public static void mostrarVentanaVendedor(JDesktopPane dp) {
