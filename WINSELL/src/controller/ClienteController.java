@@ -1,6 +1,6 @@
 package controller;
 
-import elaprendiz.conection.BaseConexion;
+import conection.BaseConexion;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;

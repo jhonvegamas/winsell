@@ -4,7 +4,7 @@
  */
 package ferapp;
 
-import elaprendiz.conection.BaseConexion;
+import conection.BaseConexion;
 import java.awt.Toolkit;
 import java.io.File;
 import java.sql.Connection;
@@ -83,7 +83,6 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuItem7 = new javax.swing.JMenuItem();
         mFacturas = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Facturacion APR");
@@ -234,14 +233,6 @@ public class MainWindow extends javax.swing.JFrame {
         });
         mFacturas.add(jMenuItem1);
 
-        jMenuItem4.setText("Factura Prueba");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        mFacturas.add(jMenuItem4);
-
         jMenuBar1.add(mFacturas);
 
         setJMenuBar(jMenuBar1);
@@ -373,11 +364,6 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jMenuItemVendedorActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-        AdministradorVentanas.mostrarVentanaFactura2(jDesktopPane1);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         AdministradorVentanas.mostrarVentanaVendedor(jDesktopPane1);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
@@ -408,7 +394,6 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItemAnuales;

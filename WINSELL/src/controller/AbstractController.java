@@ -1,6 +1,6 @@
 package controller;
 
-import elaprendiz.conection.BaseConexion;
+import conection.BaseConexion;
 import excepciones.ExceptionValoresNoIgual;
 import java.sql.ResultSet;
 import java.sql.SQLException;

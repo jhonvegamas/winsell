@@ -1,4 +1,4 @@
-package elaprendiz.conection;
+package conection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
