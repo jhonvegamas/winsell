@@ -76,12 +76,15 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(70, 70, 70));
         jPanel1.setLayout(new java.awt.BorderLayout(4, 0));
 
+        jPanel2.setBackground(new java.awt.Color(70, 70, 70));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("ARTICULO:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
@@ -97,6 +100,7 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
         jPanel2.add(txtNombreProducto, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("CANTIDAD:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -106,6 +110,7 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
         jPanel2.add(jLabel2, gridBagConstraints);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PRECIO:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -126,6 +131,7 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
         jPanel2.add(txtPrecioProducto, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("PRECIO TOTAL:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -156,6 +162,7 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
 
         jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
+        jPanel3.setBackground(new java.awt.Color(70, 70, 70));
         jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.LINE_AXIS));
 
         bntAceptar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -168,9 +175,11 @@ public class PanelCantidadArticulo extends javax.swing.JPanel {
 
         jPanel1.add(jPanel3, java.awt.BorderLayout.EAST);
 
+        lbAviso.setBackground(new java.awt.Color(70, 70, 70));
         lbAviso.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lbAviso.setForeground(new java.awt.Color(204, 0, 51));
+        lbAviso.setForeground(new java.awt.Color(0, 255, 51));
         lbAviso.setText("Ingrese una cantidad mayor a 0");
+        lbAviso.setOpaque(true);
         jPanel1.add(lbAviso, java.awt.BorderLayout.CENTER);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);

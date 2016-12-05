@@ -115,10 +115,11 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         setPreferredSize(new java.awt.Dimension(650, 300));
         setLayout(new java.awt.BorderLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(70, 70, 70));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Fecha:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -128,6 +129,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(jLabel1, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Cliente:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -137,6 +139,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(jLabel2, gridBagConstraints);
 
         lbCliente.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbCliente.setForeground(new java.awt.Color(255, 255, 255));
         lbCliente.setText("jLabel3");
         lbCliente.setPreferredSize(new java.awt.Dimension(260, 17));
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -147,6 +150,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(lbCliente, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Vendedor:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -156,6 +160,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(jLabel4, gridBagConstraints);
 
         lbVendedor.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbVendedor.setForeground(new java.awt.Color(255, 255, 255));
         lbVendedor.setText("jLabel5");
         lbVendedor.setPreferredSize(new java.awt.Dimension(260, 14));
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -167,6 +172,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(lbVendedor, gridBagConstraints);
 
         lbFecha.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbFecha.setForeground(new java.awt.Color(255, 255, 255));
         lbFecha.setPreferredSize(new java.awt.Dimension(100, 17));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -174,6 +180,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(lbFecha, gridBagConstraints);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Nro:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -183,6 +190,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jPanel1.add(jLabel6, gridBagConstraints);
 
         lbNumero.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbNumero.setForeground(new java.awt.Color(255, 255, 255));
         lbNumero.setText("jLabel7");
         lbNumero.setPreferredSize(new java.awt.Dimension(100, 17));
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -192,7 +200,7 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
 
         add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(70, 70, 70));
         jPanel2.setLayout(new java.awt.BorderLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
@@ -202,7 +210,9 @@ public class PanelImprimible extends javax.swing.JPanel implements Printable{
         jScrollPane1.setOpaque(false);
         jScrollPane1.setViewport(vp);
 
+        tblDetalle.setBackground(new java.awt.Color(70, 70, 70));
         tblDetalle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tblDetalle.setForeground(new java.awt.Color(255, 255, 255));
         tblDetalle.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
