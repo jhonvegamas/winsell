@@ -77,10 +77,12 @@ public class PanelVistaFactura extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(70, 70, 70));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Buscar Por:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.insets = new java.awt.Insets(5, 0, 0, 0);
@@ -93,8 +95,10 @@ public class PanelVistaFactura extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(5, 0, 0, 8);
         jPanel1.add(txtNumFactura, gridBagConstraints);
 
+        rbFactura.setBackground(new java.awt.Color(70, 70, 70));
         buttonGroup1.add(rbFactura);
         rbFactura.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbFactura.setForeground(new java.awt.Color(255, 255, 255));
         rbFactura.setSelected(true);
         rbFactura.setText("Nro. Factura");
         rbFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -108,8 +112,10 @@ public class PanelVistaFactura extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(2, 0, 5, 0);
         jPanel1.add(rbFactura, gridBagConstraints);
 
+        rbFecha.setBackground(new java.awt.Color(70, 70, 70));
         buttonGroup1.add(rbFecha);
         rbFecha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbFecha.setForeground(new java.awt.Color(255, 255, 255));
         rbFecha.setText("Fecha");
         rbFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,6 +141,7 @@ public class PanelVistaFactura extends javax.swing.JPanel {
 
         add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
+        jPanel2.setBackground(new java.awt.Color(70, 70, 70));
         jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -157,11 +164,14 @@ public class PanelVistaFactura extends javax.swing.JPanel {
 
         add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
+        jPanel3.setBackground(new java.awt.Color(70, 70, 70));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jScrollPane1.setPreferredSize(new java.awt.Dimension(680, 150));
 
+        tblFacturas.setBackground(new java.awt.Color(70, 70, 70));
+        tblFacturas.setForeground(new java.awt.Color(255, 255, 255));
         tblFacturas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

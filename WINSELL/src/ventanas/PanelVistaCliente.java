@@ -50,10 +50,12 @@ public class PanelVistaCliente extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setBackground(new java.awt.Color(70, 70, 70));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Buscar Cliente:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.ipady = 4;
@@ -73,7 +75,9 @@ public class PanelVistaCliente extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(2, 0, 1, 0);
         jPanel1.add(txtDatoCliente, gridBagConstraints);
 
+        rbCodigo.setBackground(new java.awt.Color(70, 70, 70));
         rbCodigo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        rbCodigo.setForeground(new java.awt.Color(255, 255, 255));
         rbCodigo.setSelected(true);
         rbCodigo.setText("Por Código");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -83,7 +87,9 @@ public class PanelVistaCliente extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(2, 0, 1, 0);
         jPanel1.add(rbCodigo, gridBagConstraints);
 
+        rbNombre.setBackground(new java.awt.Color(70, 70, 70));
         rbNombre.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        rbNombre.setForeground(new java.awt.Color(255, 255, 255));
         rbNombre.setText("Por Nombre");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -92,7 +98,9 @@ public class PanelVistaCliente extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(2, 0, 1, 0);
         jPanel1.add(rbNombre, gridBagConstraints);
 
+        rbRuc.setBackground(new java.awt.Color(70, 70, 70));
         rbRuc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        rbRuc.setForeground(new java.awt.Color(255, 255, 255));
         rbRuc.setText("Por RUC");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -121,6 +129,8 @@ public class PanelVistaCliente extends javax.swing.JPanel {
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setPreferredSize(new java.awt.Dimension(452, 120));
 
+        jTable1.setBackground(new java.awt.Color(70, 70, 70));
+        jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
