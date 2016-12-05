@@ -169,10 +169,12 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
 
         jPanel2.add(pnlBotones, java.awt.BorderLayout.PAGE_END);
 
+        pnlEntradas.setBackground(new java.awt.Color(77, 77, 77));
         pnlEntradas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlEntradas.setLayout(new java.awt.GridBagLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombres:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
@@ -180,6 +182,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel2, gridBagConstraints);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Apellidos:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -189,6 +192,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel3, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Dirección:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -229,6 +233,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(txtDir, gridBagConstraints);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Cedula/RUC:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -238,6 +243,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel5, gridBagConstraints);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Telefono:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -247,6 +253,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel6, gridBagConstraints);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Fecha Ingreso:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -285,6 +292,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(dtFechaIngreso, gridBagConstraints);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Sexo:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
@@ -294,6 +302,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel8, gridBagConstraints);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Celular:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
@@ -303,6 +312,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel9, gridBagConstraints);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Ventas");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
@@ -332,6 +342,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(txtCelular, gridBagConstraints);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Email:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -372,6 +383,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(dtFechaNac, gridBagConstraints);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Fecha Nacimiento:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
@@ -380,6 +392,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(jLabel12, gridBagConstraints);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Sueldo:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -401,6 +414,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         pnlEntradas.add(ftxtSueldo, gridBagConstraints);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Labora:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -422,10 +436,12 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
 
         jPanel1.add(jPanel2, java.awt.BorderLayout.CENTER);
 
+        jPanel3.setBackground(new java.awt.Color(77, 77, 77));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Codigo:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.insets = new java.awt.Insets(4, 0, 3, 0);

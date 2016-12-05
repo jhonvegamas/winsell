@@ -213,6 +213,7 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
+        jPanel2.setBackground(new java.awt.Color(77, 77, 77));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
@@ -272,7 +273,7 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
 
         jPanel3.setLayout(new java.awt.BorderLayout());
 
-        pnlBotones.setLayout(new java.awt.GridLayout());
+        pnlBotones.setLayout(new java.awt.GridLayout(1, 0));
 
         bntNuevo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         bntNuevo.setText("Nuevo");
@@ -343,15 +344,22 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
 
         jPanel3.add(pnlBotones, java.awt.BorderLayout.PAGE_END);
 
+        pnlEntradas.setBackground(new java.awt.Color(77, 77, 77));
         pnlEntradas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        jLabel2.setBackground(new java.awt.Color(77, 77, 77));
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Articulo:");
 
+        jLabel3.setBackground(new java.awt.Color(77, 77, 77));
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cantidad:");
 
+        jLabel4.setBackground(new java.awt.Color(77, 77, 77));
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Precio:");
 
         txtArticulo.setEditable(false);
@@ -367,7 +375,9 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
         txtCodigo.setEnabled(false);
         txtCodigo.setPreferredSize(new java.awt.Dimension(180, 21));
 
+        jLabel1.setBackground(new java.awt.Color(77, 77, 77));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Codigo:");
 
         txtPrecio.setEditable(false);

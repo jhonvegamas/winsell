@@ -77,6 +77,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
+        jDesktopPane1.setBackground(new java.awt.Color(77, 77, 77));
         jDesktopPane1.setPreferredSize(new java.awt.Dimension(600, 400));
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
