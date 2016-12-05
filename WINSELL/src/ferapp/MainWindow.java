@@ -67,7 +67,6 @@ public class MainWindow extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mArchivo = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItemDiarias = new javax.swing.JMenuItem();
         jMenuItemSemanales = new javax.swing.JMenuItem();
@@ -75,6 +74,7 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuItemAnuales = new javax.swing.JMenuItem();
         jMenuItemCliente = new javax.swing.JMenuItem();
         jMenuItemVendedor = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         mVendedor = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         mClientes = new javax.swing.JMenu();
@@ -107,20 +107,13 @@ public class MainWindow extends javax.swing.JFrame {
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 338, Short.MAX_VALUE)
+            .addGap(0, 309, Short.MAX_VALUE)
         );
 
         getContentPane().add(jDesktopPane1, java.awt.BorderLayout.CENTER);
 
+        mArchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/archivo48x48.png"))); // NOI18N
         mArchivo.setText("Archivo");
-
-        jMenuItem5.setText("Salir");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        mArchivo.add(jMenuItem5);
 
         jMenu2.setText("Reportes");
 
@@ -174,10 +167,20 @@ public class MainWindow extends javax.swing.JFrame {
 
         mArchivo.add(jMenu2);
 
+        jMenuItem5.setText("Salir");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        mArchivo.add(jMenuItem5);
+
         jMenuBar1.add(mArchivo);
 
+        mVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/vendedor.png"))); // NOI18N
         mVendedor.setText("Vendedores");
 
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/vendedor24x24.png"))); // NOI18N
         jMenuItem3.setText("Administrar Vendedor");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,8 +191,10 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuBar1.add(mVendedor);
 
+        mClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/cliente48x48.png"))); // NOI18N
         mClientes.setText("Clientes");
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/cliente24x24.png"))); // NOI18N
         jMenuItem2.setText("Administrar Cliente");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,8 +205,10 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuBar1.add(mClientes);
 
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/productos48x48.png"))); // NOI18N
         jMenu1.setText("Productos");
 
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/productos24x24.png"))); // NOI18N
         jMenuItem7.setText("Administrar Productos");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,9 +219,11 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        mFacturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/factura48x48.png"))); // NOI18N
         mFacturas.setText("Facturas");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/factura24x24.png"))); // NOI18N
         jMenuItem1.setText("Nueva Factura");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,10 +254,6 @@ public class MainWindow extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         AdministradorVentanas.mostrarVentanaCliente(jDesktopPane1);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
-
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        AdministradorVentanas.mostrarVentanaVendedor(jDesktopPane1);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         int op = finalizar();
@@ -370,6 +375,10 @@ public class MainWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
         AdministradorVentanas.mostrarVentanaFactura2(jDesktopPane1);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        AdministradorVentanas.mostrarVentanaVendedor(jDesktopPane1);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     public int finalizar() {
         return JOptionPane.showConfirmDialog(this, "Si existe algun dato sin guardar "
