@@ -115,6 +115,7 @@ public class MainWindow extends javax.swing.JFrame {
         mArchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/archivo48x48.png"))); // NOI18N
         mArchivo.setText("Archivo");
 
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/reportes24x24.png"))); // NOI18N
         jMenu2.setText("Reportes");
 
         jMenuItemDiarias.setText("Reporte de Ventas Diarias.");
@@ -167,6 +168,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         mArchivo.add(jMenu2);
 
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/exit24x24.png"))); // NOI18N
         jMenuItem5.setText("Salir");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +179,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenuBar1.add(mArchivo);
 
-        mVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/vendedor.png"))); // NOI18N
+        mVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/vendedor48x48.png"))); // NOI18N
         mVendedor.setText("Vendedores");
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/vendedor24x24.png"))); // NOI18N
