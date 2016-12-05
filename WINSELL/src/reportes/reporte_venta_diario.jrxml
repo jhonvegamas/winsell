@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7929f943-b450-4301-bed4-803c0f82aa96">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT v.`ID_VEN` AS No_Vendedor,
+ v.`NOM_VEN` AS Vendedor,
+ f.`NUM_FACV` AS No_Factura, 
+f.`FECHA` AS Fecha, 
+f.`TOT_DES` AS Descuento, 
+f.`TOT_IVA` AS IVA,
+ f.`PAGO_INI` AS TOTAL 
+FROM `vendedores`v, 
+`facv_cab` f
+ WHERE  
+v.id_ven = f.id_ven
+ AND CURDATE() like Fecha]]>
+	</queryString>
+	<field name="No_Factura" class="java.lang.String"/>
+	<field name="Fecha" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Vendedor" class="java.lang.String"/>
+	<field name="No_Vendedor" class="java.lang.String"/>
+	<field name="Descuento" class="java.lang.Double"/>
+	<field name="IVA" class="java.lang.Double"/>
+	<field name="TOTAL" class="java.lang.Double"/>
+	<group name="Vendedor">
+		<groupExpression><![CDATA[$F{Vendedor}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<staticText>
+					<reportElement style="Column header" x="92" y="14" width="92" height="15" uuid="8b8e60de-70ab-482d-b61a-f12784294b55"/>
+					<text><![CDATA[Fecha]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="0" y="14" width="92" height="15" uuid="05ef8045-ac75-488c-9c52-275bf095292a"/>
+					<text><![CDATA[No_Factura]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="182" y="14" width="92" height="15" uuid="1577ec96-ac69-49dc-bf01-01f0f419b62f"/>
+					<text><![CDATA[No_Vendedor]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="274" y="14" width="92" height="15" uuid="426a9024-4454-4f2c-adaa-cf587de9183c"/>
+					<text><![CDATA[Descuento]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="366" y="14" width="92" height="15" uuid="5a3ca006-cdf6-4057-a83e-bfe4c09c652d"/>
+					<text><![CDATA[IVA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="458" y="14" width="92" height="15" uuid="72044821-b767-47e9-abbe-f14038f35c49"/>
+					<text><![CDATA[TOTAL]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="1404e31c-3a73-417b-ac1c-556d94b6614d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Los caciques]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="100" y="46" width="174" height="22" uuid="017c99ef-51a3-47c8-b543-10325a1a02f3"/>
+				<text><![CDATA[Posada y Balneario]]></text>
+			</staticText>
+			<image>
+				<reportElement x="316" y="0" width="240" height="70" uuid="2b0c847a-15e3-4387-9968-2b74cfb8b95c"/>
+				<imageExpression><![CDATA["C:\\Users\\Leonardo\\Pictures\\logoca.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="5e48ffa1-8a22-4976-b36e-6869caf6042b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="SubTitle" x="0" y="11" width="506" height="24" forecolor="#006600" uuid="71d9da06-f483-41c4-b080-b4a44acfd892"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Vendedor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="6186e6c3-91db-4c0b-9b16-1c5c275d0979"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="92" height="15" uuid="dcf00e23-a2f0-4a01-92d6-7f996dc40dac"/>
+				<textFieldExpression><![CDATA[$F{No_Factura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="92" y="0" width="92" height="15" uuid="099b9a2a-3050-4854-ac33-66a177cbf5e4"/>
+				<textFieldExpression><![CDATA[$F{Fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="184" y="0" width="92" height="15" uuid="fa4c3bcc-0bb6-4b7c-b026-65f722bc98eb"/>
+				<textFieldExpression><![CDATA[$F{No_Vendedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="276" y="0" width="92" height="15" uuid="fdac2327-50a2-439d-999f-0d9b260e7fae"/>
+				<textFieldExpression><![CDATA[$F{Descuento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="368" y="0" width="92" height="15" uuid="c727e61a-82c1-44d0-8a75-88f5b55f1e18"/>
+				<textFieldExpression><![CDATA[$F{IVA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="460" y="0" width="92" height="15" uuid="c874d1ad-5302-4d5c-a462-133f9e89ec8e"/>
+				<textFieldExpression><![CDATA[$F{TOTAL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="e852ee30-bf7d-471e-95a4-2c55a03f0b09"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="41585eab-686d-4918-981a-ec16ad4dc84e"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="f11c6a23-8670-4c1b-ae4a-917e08b8f18e"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="112d33e3-bc51-4bcf-9e78-8713d15f2f12"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
