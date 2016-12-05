@@ -7,6 +7,7 @@ package ventanas;
 
 import controller.ArticuloController;
 import java.awt.EventQueue;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import utilidades.ExaminadorCampos;
@@ -30,6 +31,8 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
         initComponents();
         acl = new ArticuloController();
         iniciarValores();
+        
+//        this.setIconImage(new ImageIcon(getClass().getResource("/IMAGENES/logo.jpg")).getImage());
     }
 
     public void setArticuloObtenido(PanelVistaArticulo pvc) {
@@ -209,6 +212,7 @@ public class RegistroArticulo extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setTitle("Registro Articulo");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/logo.jpg"))); // NOI18N
         setVisible(true);
 
         jPanel1.setLayout(new java.awt.BorderLayout());

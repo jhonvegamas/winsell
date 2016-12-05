@@ -272,6 +272,7 @@ public class RegistroCliente extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setTitle("Registro Cliente");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/logo.jpg"))); // NOI18N
         setVisible(true);
 
         jPanel1.setLayout(new java.awt.BorderLayout());

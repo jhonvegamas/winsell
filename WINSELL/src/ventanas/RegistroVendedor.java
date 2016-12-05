@@ -93,6 +93,7 @@ public class RegistroVendedor extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setTitle("Registro Vendedor");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/logo.jpg"))); // NOI18N
         setVisible(true);
 
         jPanel1.setLayout(new java.awt.BorderLayout());
